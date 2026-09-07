@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<title>Scanner Offline Absensi QR Code Siswa</title>
+<title>Scanner Offline • SMKN 1 Wakatobi</title>
 
 <!-- QR decoder -->
 <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
@@ -699,7 +699,7 @@ canvas{
       </div>
 
       <div class="subtitle">
-        SCANNER OFFLINE ABSENSI
+        SMKN 1 WAKATOBI
       </div>
 
     </div>
@@ -997,7 +997,7 @@ canvas{
 
 <div class="footer">
 
-  Scanner Offline Absensi QR Code Siswa<br>
+  Scanner Offline • SMKN 1 Wakatobi<br>
 
   Data scan tetap tersimpan walaupun internet mati.
 
@@ -1012,15 +1012,11 @@ canvas{
    KONFIGURASI
 ===================================================== */
 
-// =====================================================
-// URL GOOGLE APPS SCRIPT (GAS)
-// Ganti HANYA URL di bawah ini untuk sekolah lain.
-// =====================================================
 const API_URL =
-  'https://script.google.com/macros/s/AKfycby-YKShDHh90IuYDeODd0OAIFUQy-Hk3DiEkyMXtx5Y465lA4C1fpmN4qYjgQgKDTKO/exec';
+'https://script.google.com/macros/s/AKfycbwJwJVkdE-VH-c1ZASwV63GGQ1LC-0E3hNKZVf25SheEyzxthiA89q1fT09hG9h3RTY/exec';
 
 const DB_NAME =
-'SCANNER_OFFLINE';
+'SMKN1_SCANNER_OFFLINE';
 
 const DB_VERSION =
 1;
@@ -3401,10 +3397,16 @@ function showSuccess(
           item.nis
         ) +
 
-        '<br>Kelas: ' +
+        '<br>Tingkat: ' +
 
         escapeHTML(
-          item.kelas
+          item.tingkat
+        ) +
+
+        '<br>Jurusan: ' +
+
+        escapeHTML(
+          item.jurusan
         ) +
 
       '</div>' +

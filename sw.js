@@ -1,10 +1,9 @@
 const CACHE_NAME =
-  'scanner-offline-absensi-v4';
+  'smkn1-scanner-v3';
 
 const APP_FILES = [
   './',
-  './index.html',
-  './sw.js'
+  './index.html'
 ];
 
 self.addEventListener(
